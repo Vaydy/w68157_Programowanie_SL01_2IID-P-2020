@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+		body {
+  background: linear-gradient(to top, #b4cac5 50%, #8ba3ad 100%);
+  height: 100%;
+}
+.border-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: none;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.border-button:before, .border-button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.border-button:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.border-button:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+.border-button:hover:before, 
+.border-button:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.border-button:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.border-button:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+.border-button:hover {
+  background: rgba(255, 255, 255, .2);
+}
+		.table, th, td{
+  						border: 1px solid black;
+  						border-collapse: collapse;
+  						justify-self: center;
+  						position: relative;
+  						width: 40%;
+  						margin: auto;
+		}
+	aside
+        {
+            width: 1300px;
+            height: 300px;
+            border: solid yellowgreen;
+        }  
+        *{
+            box-sizing: border-box;
+        }
+        h1 {
+          font-size: 50px;
+        }
+        h4 {
+            font-size: 30px;
+        }
+      </style>
+	<title>O mnie</title>
+</head>
+<body>
+	
+	<header>
+		<h1>Witaj na mojej stronie!</h1>
+	</header>
+	<section>
+		<article>
+			<h4>Kim jestem?</h4>
+            <p>Vadym Moskva w68157</p>
+		</article>
+		<aside>
+			<h2>Zainteresowania</h2>
+			<p>Moimi zainteresowaniami są:</p>
+			<ul>
+				<li>Programowanie</li>
+				<li>Nowe technologie(Software and different tools)</li>
+				<li>Gry komputerowe</li>
+                <li>Osint( Open Source Intelligence)</li>
+                <li><a href="https://en.wikipedia.org/wiki/Open-source_intelligence">What is a Open-source intelligence!</a></li>
+                <li>Blockchain- a secure and transparent digital ledger technology that is gaining popularity in finance, supply chain management, and even voting systems.</li>	  
+			</ul>
+		</aside>
+	</section>
+	<nav>
+		<table>
+			<ul>
+			<li><a href="copyindex.html">Ulubione seriale</a></li>
+            <li><a href="Ulubioneksiążki.html">Ulubione książki</a></li>
+
+
+			</ul>
+		</table>
+		<h4>Lista nieposortowana</h4>
+		<ul>
+			<li><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a></li>
+			<li><a href="https://pl.wikipedia.org/wiki/Stany_Zjednoczone">Usa</a></li>
+			<li><a href="https://www.bbc.com/news/uk">Uk BBC</a></li>
+		</ul>
+		<h4>Lista posortowana</h4>
+		<ol>
+			<li><a href="https://en.wikipedia.org/wiki/Germany/">Germany</a></li>
+			<li><a href="https://www.bing.com/travel/place-information?q=Italy&SID=09e8f885-427b-8850-947d-202e0287b9e8&form=DESTML&entrypoint=DESTM">Bing Travel</a></li>
+			<li><a href="https://en.wikipedia.org/wiki/Romania">Romania</a></li>
+		</ol>
+	</nav>
+	<section>
+		<h2>Moje wykształcenie<h2/>
+		<table style="width:100%">
+			<tr>
+				<th>Okres</th>
+				<th>Uczelnia / Szkoła</th>
+			</tr>
+			<tr>
+				<td>Obecnie</td>
+				<td>WSIZ</td>
+			</tr>
+			<tr>
+				<td>2011 - 2020</td>
+				<td>Liceum 45 we Lwowie</td>
+			</tr>
+			<tr>
+				<td>2020 - 2022</td>
+				<td>Lviv University of Business and Law </td>
+			</tr>
+		</table>
+		
+	</section>
+	<section>
+		<form action="/action_page.php" method="get"></form>
+		<p>Username:
+		<input type = "text" name = "username" size = "15" maxlength="15" />
+	<p>Max size username is 15</p>
+		</p>
+		<p>Email:
+			<input type = "text" name = "email" size = "15" maxlengt = ""/>
+			<p>Please input yours email.</p>
+		</p>
+		<p>Do you like this page?
+			<input type="checkbox" name="service" value="yes" checked="checked" /> YES
+			<input type="checkbox" name="service" value="no" checked="checked" /> NO
+		  </p>
+		  <P>If you dont like this write commentary what wrong!</P>
+		  <a href="index.html" class="border-button">Feedback</a>
+
+
+
+
+
+
+
+
+
+
+
+
+	</section>
+	
+		
+
+	<footer>
+		<hr>
+		<p>This is a random photo!</p>
+		<a href="https://www.w3schools.com/images/w3schools_green.jpg">
+			<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3schools logo">
+		  </a>		  
+		<p>Strona stworzona przez Vadym Moskva (w68157)</p>
+	</footer>
+</body>
+</html>
