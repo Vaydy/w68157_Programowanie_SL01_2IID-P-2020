@@ -11,6 +11,17 @@
 	<button onclick="checkAge()">Sprawdź</button>
 	<p id="result"></p>
 
-	<script src="test.js"></script>
+	<script>
+		function checkAge() {
+			let ageInput = document.getElementById("age-input");
+			let result = document.getElementById("result");
+
+			if (ageInput.value >= 18) {
+				result.innerHTML = "Jesteś pełnoletni.";
+			} else {
+				result.innerHTML = "Nie jesteś jeszcze pełnoletni.";
+			}
+		}
+	</script>
 </body>
 </html>
