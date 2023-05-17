@@ -32,4 +32,4 @@ samochod.zwiekszPredkosc(50);
 console.log(samochod.informacjeOSamochodzie());
 samochod.zmniejszPredkosc(20);
 console.log(samochod.informacjeOSamochodzie());
-console.log(samochod.wiekSamochodu());
+console.log(samochod.wiekSamochodu());  
