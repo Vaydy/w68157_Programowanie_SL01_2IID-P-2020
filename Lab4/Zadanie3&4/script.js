@@ -18,6 +18,11 @@ class Samochod {
   informacjeOSamochodzie() {
     return `${this.marka} ${this.model} (${this.rokProdukcji}), Kolor: ${this.kolor}, Prędkość: ${this.predkosc}`;
   }
+  wiekSamochodu() {
+    const aktualnyRok = new Date().getFullYear();
+    const wiek = aktualnyRok - this.rokProdukcji;
+    return wiek;
+  }
 }
 
 
@@ -27,3 +32,4 @@ samochod.zwiekszPredkosc(50);
 console.log(samochod.informacjeOSamochodzie());
 samochod.zmniejszPredkosc(20);
 console.log(samochod.informacjeOSamochodzie());
+console.log(samochod.wiekSamochodu());
