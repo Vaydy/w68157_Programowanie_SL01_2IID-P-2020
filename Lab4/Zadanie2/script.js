@@ -12,7 +12,7 @@ const student = {
       sum += this.numbers[i];
     }
     var average = sum / this.numbers.length;
-    console.log("Середня оцінка: " + average);
+    console.log("Sredocena: " + average);
   }
 };
 
