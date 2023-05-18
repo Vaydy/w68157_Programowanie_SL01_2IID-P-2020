@@ -7,3 +7,6 @@ button {
 button.clicked {
     background-color: yellow;
 }
+#element {
+    display: none;
+}
