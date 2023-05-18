@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularz rejestracyjny</title>
+    <style src="style.css"></style>
+</head>
+<body>
+    <form id="registration-form" onsubmit="validateForm(event)">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" required>
+        <span id="name-error" class="error-message"></span>
+
+        <label for="surname">Nazwisko:</label>
+        <input type="text" id="surname" required>
+        <span id="surname-error" class="error-message"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="email-error" class="error-message"></span>
+
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" required>
+        <span id="password-error" class="error-message"></span>
+
+        <label for="repassword">Powtórz hasło:</label>
+        <input type="password" id="repassword" required>
+        <span id="repassword-error" class="error-message"></span>
+
+        <button type="submit">Zapisz</button>
+    </form>
+<script src="script.js"></script>
+</body>
