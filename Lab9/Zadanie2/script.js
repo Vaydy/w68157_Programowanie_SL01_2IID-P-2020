@@ -50,7 +50,7 @@ function PrawidlowaForma(event) {
 
     }
     alert('Formularz został pomyślnie wysłany');
-    document.getElementById('registration-form').reset(); // Czyszczenie formularza
+    document.getElementById('registration-form').reset(); 
 }
 
 
